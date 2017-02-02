@@ -1,0 +1,21 @@
+FEWD30 Day 1
+
+No class on Prez Day, 2/20
+Office Hours: 3 times a week
+Data & the Food Industry Event 2/7 6:30-8:30pm
+promo code for 30% off any additional GA course - BACK2SCHOOL-DC
+
+Ideas for Final Project
+Portfolio site
+Client site
+Site for friend's business, fictional biz, w/e
+Homework assigned on Wednesdays, due next Wednesday
+
+
+FEWD30 Day 2 - CSS Basics
+
+../ goes into the parent folder when navigating a directory
+Colors defined by RGB; hexadecimal notation
+rgba(0,0,0, 0.25) fourth value is opacity. Opacity is also a CSS attribute.
+
+HOMEWORK: create portfolio webpage, link to about me page, zip and submit to #Homework Slack channel by Wednesday
