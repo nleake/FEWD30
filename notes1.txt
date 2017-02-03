@@ -19,3 +19,14 @@ Colors defined by RGB; hexadecimal notation
 rgba(0,0,0, 0.25) fourth value is opacity. Opacity is also a CSS attribute.
 
 HOMEWORK: create portfolio webpage, link to about me page, zip and submit to #Homework Slack channel by Wednesday
+
+
+FEWD30 Day 3 - Styles
+
+inline elements don't get vertical margins
+
+PLANNING
+Write down what your code needs to do before you write a single line of code
+Give your code comments!
+
+Relaxr application
