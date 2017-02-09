@@ -30,3 +30,6 @@ Write down what your code needs to do before you write a single line of code
 Give your code comments!
 
 Relaxr application
+
+
+CLEAN UP YOUR CODE AND ADD ALT TAGS TO IMAGES SON
