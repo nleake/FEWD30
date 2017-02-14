@@ -32,4 +32,36 @@ Give your code comments!
 Relaxr application
 
 
-CLEAN UP YOUR CODE AND ADD ALT TAGS TO IMAGES SON
+CLEAN UP YOUR CODE AND ADD ALT TAGS TO IMAGES
+
+FEWD30 Day 6 - Lab Work
+HOMEWORK: finish Relaxr blog page and matchup page.
+
+
+
+FEWD30 Day 7 - Intro Programming
+
+Program is a set of instructions that tell the computer what to don
+
+Thermostat pseudocode exercise
+Requirements
+On/Off
+Measure temperature
+Set temperature
+Timer
+Fan settings
+Heater
+Cooler
+
+thermostat start ->
+var currentTemp = temperatureGauge();
+var tempSetting = tempSetting();
+
+
+COLOR SWITCHER CODE ALONG
+IDs and classes are particular in JS;
+
+You can console.log the style of an object to check out what styles are applied to it.
+If there are conflicting IDs further down in your document, JS isn't going to care about those and ignore them.
+
+
