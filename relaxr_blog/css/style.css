@@ -51,17 +51,17 @@ body {
 
 /* Center the container */
 body * + * {
-  margin-top: 1.25em;
   font-size: 18px;
   line-height: 1.5;
 }
 
 #container {
-  width: 960px;
+  max-width: 1000px;
   margin: auto;
   background: #f0efef;
 }
 
+/*header and nav area*/
 header {
   background-color: #033048;
   float: left;
@@ -99,12 +99,18 @@ a{
   vertical-align: middle;
   display: inline;
 }
+
+/*now we're getting into the main body*/
 .main {
   width: 70%;
   float: left;
+  margin: 0 auto;
+  padding: 0.5em 2em;
 }
 article {
   padding: 0 auto;
+  border-bottom: 1px solid #033048;
+  margin-top: .5em;
 }
 
 article .bodyCopy::first-letter {
@@ -117,17 +123,28 @@ article .bodyCopy::first-letter {
   padding-right: 4px;
   padding-left: 3px;
 }
+
+article img {
+  margin-bottom: 1.5em;
+}
+
+
+/*sidebar style*/
 .sidebar {
   float: right;
   width: 27%;
   padding: 0 1.5em;
 }
+
+
+/*stuff below sidebar*/
 .signup {
   background: #f9e42e;
   padding: 30px;
   width: 100%;
   clear: both;
 }
+
 .signup button {
   background: #033048;
   color: #fff;
@@ -138,13 +155,34 @@ article .bodyCopy::first-letter {
   font-size: 12px;
   border-radius: 5px;
 }
+
+#ad-unit {
+  width: 90%;
+  margin: 0 auto;
+}
+
 section {
   margin-bottom: 3em;
 }
+
 h2 {
   color: #033048;
   font-size: 35px;
   font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.sidebar h2 {
+  font-weight: 800;
+  font-size: 28px;
+}
+h2 ul li {
+  line-height: 1;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.sidebar span {
+  font-weight: 800;
+  color: #033048;
 }
 .readMore {
   font-size: 1.5em;
@@ -153,6 +191,7 @@ h2 {
   text-align: right;
   display: block;
   vertical-align: right;
+  margin-top: 1.5em;
 }
 footer {
   background: #121212;
@@ -182,7 +221,7 @@ footer p {
 
 /******************************************
 /* ADDITIONAL STYLES
-/*******************************************/
+/******************************************
 
 
 
