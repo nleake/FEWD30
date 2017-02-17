@@ -69,7 +69,7 @@ Went over events, pseudo code, and getElementById.
 -----------
 FEWD30 Day 8 - jQuery Basics
 
-getElementById selects the element by ID. 
+getElementById selects the element by ID.
 
 jQuery is a cross-browser JavaScript library designed to simplify the client-side scripting of HTML.
 
