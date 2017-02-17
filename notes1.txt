@@ -64,4 +64,14 @@ IDs and classes are particular in JS;
 You can console.log the style of an object to check out what styles are applied to it.
 If there are conflicting IDs further down in your document, JS isn't going to care about those and ignore them.
 
+Went over events, pseudo code, and getElementById.
+
+-----------
+FEWD30 Day 8 - jQuery Basics
+
+getElementById selects the element by ID. 
+
+jQuery is a cross-browser JavaScript library designed to simplify the client-side scripting of HTML.
+
+
 
