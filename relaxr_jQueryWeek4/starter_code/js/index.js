@@ -1,29 +1,47 @@
-// TODO: Write onready function  using $.ready() to delay code from executing
-// until page loads.
-
-// TODO: select DOM elements with CSS selectors using $.click() handler
-
-// TODO:  - If a user clicks "Read More" on the primary column:
-
-//   - have the text in the ```<p>``` tag slide down along with a "Read Less" link in the blog post using  ```$.slideDown()``` and ```$.show()```
-//   - hide the "Read More" link using ```$.hide()```
-
-//
-
+//function to wait until the document finishes loading
 $( document ).ready(function() {
+//wrapping stuff in here, but is it totally necessary this time?
+  // function to prevent links from going to a new page
+  $( "a" ).click(function( event ) {
+    event.preventDefault();
+  });
 
-});
-
-$( "a" ).click(function( event ) {
-  event.preventDefault();
-});
-
-    $( ".readmore" ).click(function() {
-      $( "#show-this-on-click" ).slideToggle( "medium", function() {
-        // Animation complete.
-      });
+  //function to show the Read More text, hide the Read More button
+  // and show the Read Less text on click of Read More
+  $( ".readmore" ).click(function() {
+    $( "#show-this-on-click" ).slideDown( "medium", function() {
+      // Animation complete.
+          //show Read Less
+        $( ".readless" ).show( "medium" );
+        //hide Read More
+        $( ".readmore" ).hide( "slow" );
     });
+    //show Read Less
+    //$( ".readless" ).show( "slow" );
+    //hide Read More
+   // $( ".readmore" ).hide( "slow" );
+  });
 
+  //function to hide the Read More text, Read Less button
+  // and display the Read More text on click of Read Less
+  $( ".readless" ).click(function() {
+    $( "#show-this-on-click" ).slideUp( "medium", function() {
+      // Animation complete.
+    });
+    $( ".readless" ).hide( "slow" );
+    $( ".readmore" ).show( "slow" );
+  });
+
+  //functions below are similar to the above two, but for the sidebar
+  $( ".learnmore" ).click(function() {
+    $( ".learnmore" ).hide( "medium", function() {
+        $( "#learnmoretext" ).slideDown( "medium", function() {
+      // Animation complete.
+    });
+    } );
+  });
+
+}); //end document.ready
 
 
 
