@@ -75,3 +75,25 @@ jQuery is a cross-browser JavaScript library designed to simplify the client-sid
 
 
 
+FEWD30 Day 9 - Intro to Programming
+
+Converting numbers to strings
+var number = 4;
+number.toString(); => "4"
+number + ""; => "4" //string interpolation with the /"+/"
+
+
+
+FEWD30 Day 10 - working with JavaScript
+
+Submitting a form will usually refresh the page. Returning false will break it beforehand.
+
+Use cases for anonymous function
+  function(){
+  
+  }
+
+
+
+
+
