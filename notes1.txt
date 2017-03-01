@@ -95,5 +95,48 @@ Use cases for anonymous function
 
 
 
+COMMAND LINE SESSION
+TODO: google how to customize bash profile and set shortcuts
+
+COMMANDS
+~/ will take you back to your user directory
+cd change directory
+mkdir makes directory
+cd ../ goes up a level
+touch makes a file (eg touch index.html)
+rm deletes a file
+rm -r deletes a folder and all of it's contents (deletes recursively)
+mv move receives two parameters(what you want to move, and the destination)
+mv ~/Downloads/truth.gif ./ will move truth.gif to the current active directory
+cp is copy (cp ~/Downloads/truth.gif ./ will copy that gif into my active directory)
+
+GIT
+git init - makes a repo
+git status - for status
+git add - adds files to track
+git commit - once you hit commit, you will need to add a message in VIM. 
+  Hit 'i' to enter insert mode.
+  Type your header, 'Enter' a few times, and then your commit message.
+  Then hit ':' then 'wq' to Save and Quit.
+  
+create repo on github w/o initializing w readmegit
+git remote add origin <URL>
+git push -u origin master
+git checkout master
+git pull
+git commit -m "commit message"
+  git commit . can commit the working directory or commit js/ to commit that folder
+git checkout -b branch_name - creates a new branch and switches to it
+git branch - tells you the branch you are on
+git log - shows all the commit messages we've done
+git merge branchname
+git push - will push the changes
+
+//look up git autocomplete dictionary for windows
+//force myself to use the command line for file manipulation to learn
+
+
+
+
 
 
