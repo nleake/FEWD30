@@ -90,7 +90,7 @@ Submitting a form will usually refresh the page. Returning false will break it b
 
 Use cases for anonymous function
   function(){
-  
+  //what is it
   }
 
 
@@ -120,7 +120,7 @@ git commit - once you hit commit, you will need to add a message in VIM.
   Then hit ':' then 'wq' to Save and Quit.
   
 create repo on github w/o initializing w readmegit
-git remote add origin <URL>
+git remote add origin <URL>/
 git push -u origin master
 git checkout master
 git pull
@@ -137,6 +137,10 @@ git push - will push the changes
 
 
 
+FEWD30 Day 11 - JS Lab
+
+Turn in the temperature converterDo
+Do the assignment in the latest folders and stuff
 
 
 

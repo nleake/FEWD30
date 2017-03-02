@@ -3,6 +3,7 @@ body, input, button {
   font-size: 20px;
   text-align: center;
 }
+
 #inputs {
   margin-bottom: 30px;
 }
@@ -28,3 +29,28 @@ button:active {
   display: inline-block;
   width: 40px;
 }
+
+.summer {
+  background-image: url('../images/summer.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+.winter {
+  background-image: url('../images/winter.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+.spring {
+  background-image: url('../images/spring.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+.autumn {
+  background-image: url('../images/autumn.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
