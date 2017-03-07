@@ -34,23 +34,31 @@ button:active {
   background-image: url('../images/summer.jpg');
   background-size: fill;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .winter {
   background-image: url('../images/winter.jpg');
   background-size: fill;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .spring {
   background-image: url('../images/spring.jpg');
   background-size: fill;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .autumn {
   background-image: url('../images/autumn.jpg');
   background-size: fill;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+#shading {
+  padding: 1em 0;
 }
 

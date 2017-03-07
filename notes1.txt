@@ -142,5 +142,28 @@ FEWD30 Day 11 - JS Lab
 Turn in the temperature converterDo
 Do the assignment in the latest folders and stuff
 
+FEWD30 Day 12 - 
+
+function createLi(myLiText){
+  $('#container>ol').prepend("<li>"+ myLiText +"</li>");
+}
+
+Use multiline arrays and lists
+var groceries=[
+  "milk",
+  "cookies",
+  "sugar",
+  "bananas"
+];
+groceries.forEach(CreateLi)
+
+$("#container, #main").css("width", "960px");
+
+
+Using "this" with jQuery - it targets the selected thing
+
+	$("p").on("click", function(e){
+	  $(this).fadeOut(500);
+	})
 
 
