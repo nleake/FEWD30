@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>form practice</title>
+</head>
+<body>
+<form action="", method="">
+  <!-- action specifies where to send data, method is the type of HTTP request -->
+  <input type="text" name="">
+  <input type="color" name="">
+  <input type="date" name="">
+  <input type="checkbox" name="">
+  <input type="file" name="">
+</form>
+
+
+<p>Do you prefer cats or dogs?</p>
+
+<form>
+  <label for="dogs">Dogs:</label>
+  <input type="radio" name="petChoice" value="DOGS">
+  <label for="cats">Cats:</label>
+  <input type="radio" name="petChoice" value="CATS">
+
+  <p>What's your mood?</p>
+  <select name="mood">
+    <option value="happy">:)</option>
+    <option value="neutral">:|</option>
+    <option value="sad">:(</option>
+  </select>
+
+  <textarea name="paragraph" rows="10" cols="50"></textarea>
+
+  <button>Go!</button>
+</form>
+
+<br>
+<h1>Register</h1>
+<form>
+  <div>
+    <label for="firstname">First Name: </label>
+    <input id="firstname" type="name" name="firstname" required="" placeholder="John">
+    <label for="lastname">Last Name: </label>
+    <input id="lastname" type="name" name="lastname" required="" placeholder="Smith">
+  </div>
+  <div>
+    <label for="male">Male</label>
+    <input id="male" type="radio" name="gender">
+    <label for="female">Female</label>
+    <input id="female" type="radio" name="gender">
+    <label for="other">Other</label>
+    <input id="other" type="radio" name="gender">
+  </div>
+  <div>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" placeholder="your email" required="">
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" placeholder="your password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+  </div>
+  <div>
+    <label for="birthday">Birthday: </label>
+    <select name="month">
+      <option>Month</option>
+      <option>Jan</option>
+      <option>Feb</option>
+      <option>Mar</option>
+    </select>
+    <select name="day">
+      <option>Day</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+    </select>
+    <select name="year">
+      <option>Year</option>
+      <option>1999</option>
+      <option>2000</option>
+      <option>2001</option>
+    </select>
+  </div>
+  <div>
+    <label for="agree">I agree to the terms and conditions</label>
+    <input type="checkbox" name="agree" id="agree">
+  </div>
+  <button>Submit</button>
+
+</form>
+</body>
+</html>
