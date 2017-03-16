@@ -165,5 +165,26 @@ Using "this" with jQuery - it targets the selected thing
 	$("p").on("click", function(e){
 	  $(this).fadeOut(500);
 	})
+	
+FEWD30 Day 13 - Responsive Design I 
 
+var pies = [
+  "Cherry",
+  "Chocolate",
+  "Banana",
+  "Rhubarb"
+]
 
+$('body').append("There are "+pies.length+ " total pies.<br>");
+
+pies.forEach(
+  function(element, index) {
+    if ("Cherry") {
+	  
+	}
+  }
+)
+
+FEWD30 Day 14 - Responsive Lab
+
+Homework - finish the Matchmaker responsive stuff and get a repo up for Final Project!
