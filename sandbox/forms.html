@@ -4,6 +4,69 @@
   <title>form practice</title>
 </head>
 <body>
+
+<h1>Register Now!</h1>
+
+<form>
+  <div>
+    <label for="name">Name: </label>
+    <input id="name" type="name" name="firstname" required="" placeholder="John Doe">
+  </div>
+  <div>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" placeholder="hello@gmail.com" required="">
+  </div>
+    <div>
+    <label for="phone">Phone: </label>
+    <input type="phone" name="phone" id="phone" placeholder="415-123-4567" required="">
+  </div>
+  <div>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" placeholder="your password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+  </div>
+  <div>
+    <label for="state">State: </label>
+    <select name="state">
+      <option>Alabama</option>
+      <option>Arkansas</option>
+      <option>Maryland</option>
+      <option>Virginia</option>
+    </select>
+  </div>
+  <div>
+    <label>What service are you interested in?</label>
+    <input id="relaxing" type="radio" name="relaxing">
+    <label for="relaxing">Relaxing</label>
+    <input id="female" type="radio" name="gender">
+    <label for="female">Email</label>
+    <input id="phone-service" type="radio" name="phone-service">
+    <label for="phone-service">Phone</label>
+  </div>
+  <div>
+    <label for="agree">I agree to the terms</label>
+    <input type="checkbox" name="agree" id="agree">
+  </div>
+  <button>Register Now!</button>
+
+</form>
+
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <form action="", method="">
   <!-- action specifies where to send data, method is the type of HTTP request -->
   <input type="text" name="">
@@ -84,6 +147,6 @@
   </div>
   <button>Submit</button>
 
-</form>
+</form> -->
 </body>
 </html>

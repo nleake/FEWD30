@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>form practice</title>
+  <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+
+<h1>Register Now!</h1>
+
+<form>
+  <div>
+    <label for="name" class="left">Name: </label>
+    <input id="name" type="name" name="firstname" required="" placeholder="John Doe" class="right-input">
+  </div>
+  <div>
+    <label for="email" class="left">Email: </label>
+    <input type="email" name="email" id="email" placeholder="hello@gmail.com" required="" class="right-input">
+  </div>
+    <div>
+    <label for="phone" class="left">Phone: </label>
+    <input type="phone" name="phone" id="phone" placeholder="415-123-4567" required="" class="right-input">
+  </div>
+  <div>
+    <label for="state" class="left">State: </label>
+    <select name="state" class="right-input">
+      <option>Alabama</option>
+      <option>Arkansas</option>
+      <option>Maryland</option>
+      <option>Virginia</option>
+    </select>
+  </div>
+  <div>
+    <label for="password" class="left">Password: </label>
+    <input type="password" name="password" id="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters" class="right-input">
+  </div>
+  <div>
+    <label class="left">What service are you interested in?</label>
+    <div class="radio">
+      <input id="relaxing" type="radio" name="relaxing" required="">
+      <label for="relaxing">Relaxing</label>
+    </div>
+    <div class="radio">
+      <input id="email-service" type="radio" name="email-service" required="">
+      <label for="email-service">Email</label>
+    </div>
+    <div class="radio">
+      <input id="phone-service" type="radio" name="phone-service" required="">
+      <label for="phone-service">Phone</label>
+    </div>
+  </div>
+  <div>
+    <input type="checkbox" name="agree" id="agree" required="">
+    <label for="agree">I agree to the terms</label>
+  </div>
+
+  <button><a href="">Register Now!</a></button>
+
+</form>
+</body>
+</html>
