@@ -155,3 +155,18 @@ console.log(deepEqual(obj, {here: 1, object: 2}));
 // → false
 console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
 // → true
+
+
+//FUNCTION TO REVERSE A STRING
+
+
+function reverseString(str) {
+  var strArray = [];
+  for (var i = str.length - 1; i >= 0; i--){
+    strArray.push(str[i]);
+  }
+  str = strArray.join("");
+  return str;
+}
+
+reverseString("hello");

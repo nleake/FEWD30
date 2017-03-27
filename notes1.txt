@@ -197,3 +197,8 @@ FEWD30 Day 15 - Forms and Stuff
   <option value="Second Option">Option 2</option>
   <option value="Third Option">Option 3</option>
 </select>
+
+Always use labels for your inputs! Important for 508 compliance. Label for values should match the name attritube on the input.
+
+Checkboxes, file upload inputs, and radio buttons cannot be styled directly.
+
