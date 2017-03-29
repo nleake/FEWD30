@@ -170,3 +170,27 @@ function reverseString(str) {
 }
 
 reverseString("hello");
+
+
+
+
+function palindrome(str) {
+  // Good luck!
+  str.toLowerCase();
+  str.replace(/[^a-z0-9+]+/gi, '+');
+  var firstHalf = [];
+  var secondHalf = [];
+  var strArray = [];
+  for (var i = 0; i < str.length/2; i++){
+    firstHalf.push(str[i]);
+  }
+  for (var j = str.length - 1; j > str.length/2; j--){
+    secondHalf.push(str[i]);
+  }
+
+  return firstHalf === secondHalf;
+}
+
+
+
+palindrome("_eye");
