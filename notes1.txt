@@ -202,3 +202,18 @@ Always use labels for your inputs! Important for 508 compliance. Label for value
 
 Checkboxes, file upload inputs, and radio buttons cannot be styled directly.
 
+
+FEWD30 Day Something - Animations
+
+CSS Transitions
+
+.thing1 {
+  transition: height 3s ease.
+}
+
+JS Transitions (jQuery .animate())
+
+$(#thing1).animate({
+  height: '350px',
+}, 1500)
+
