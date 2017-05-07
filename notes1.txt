@@ -217,3 +217,32 @@ $(#thing1).animate({
   height: '350px',
 }, 1500)
 
+
+
+
+
+
+Intro to SASS
+
+.scss is the file extension for SASS
+
+
+Howler practice stuff
+
+
+    //if key is a
+    if(event.key === "a"){
+      //play sound1
+      sound1.play();
+      newCircle.fillColor = "#2c3e50";
+    }
+    else if(event.key === "s"){
+      //play sound2
+      sound2.play();
+      newCircle.fillColor = "#16a085";
+    } else {
+      newCircle.fillColor = "orange";
+    }
+
+	
+	
