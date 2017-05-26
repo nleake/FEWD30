@@ -1,0 +1,118 @@
+ANGULAR JS
+A JS framework which allows you to create reactive Single Page Applications (SPAs)
+Single Page Application is a single html file with information modified using JS
+Rerenders parts of the DOM to update the page.
+
+Angular vs Angular 2 vs Angular 4
+Angular 1 = Angular JS: very popular JS framework, released a few years ago
+Angular 2 = Angular: a complete re-write of Angular 1 and the future of Angular
+Angular 4 = simply an update to Angular 2, Angular 3 was skipped due to version number conflicts
+
+Angular CLI
+ng new <app name>
+cd <app name>
+ng serve
+
+Angular runs on a server, which will run at localhost 4200
+
+We will be creating our projects in the app folder, located in the src folder; default settings should be fine
+Assets folder can be used to store image assets, etc. Environments folder can store environment variables
+
+HTML file is what you see, while the typescript file is your business logic
+Two way data binding
+
+THE BASICS
+What is Typescript?
+-------------------
+A superset to JS with more features. Includes Types, Classes, and Interfaces.
+It has strong typing, allowing you to write more robust code. However, Typescript doesn't run in the browser. Therefore it is converted to JS.
+Angular is meant to be used with Typescript. It is an addition to JS, not a replacement.
+
+Spinning up a new project creates an app folder with app.component fils that cover the app-rott component
+You can see the app-root component in your index.html file.
+index.html is served, containing script files that get run. 
+
+
+COMPONENTS & DATABINDING
+------
+Intro
+------
+Applications are built using a couple of components and are a key feature of Angular.
+A header could be it's own component. A main area and a sidebar could also be components.
+Allows you to split up your complex application/webpage into reusable parts without having to crunch everything into a single HTML or script file.
+
+
+-----------------------
+Creating a new component
+--------------------------
+AppComponent is a special component that the whole application is bootstrapped off of (app.module.ts)
+Additional components we create will not be added to the index.html file, they will be added to the app.component.html file
+When creating a component we will export a new typescript class, we should add a special decorator
+
+Decorators are a Typescript feature that allow you to enhance elements you use in your code.
+We specify 
+
+Angular uses components to build web pages and used modules to bundle different pieces/components of your app into packages
+
+AppModule 
+Import the new components to app.module and Register new components in NgModule.declarations
+
+Can create a new component using ng generate component <component name>
+	or using the shortcut ng g c <component name>
+
+Remember we can reuse components as often as we want.
+
+
+--------------------
+Styling Components
+--------------------
+Can define the html code in the typescript code for the component.
+Each component must have a templateUrl or a template
+
+Can specify different stylesheets or inline styles on the app.
+Can use classes or attributes as selectors. (eg .app-server instead of app-server) would appear on elements with the class of app-server
+
+
+----------------------
+Databinding
+----------------------
+Databinding is communication between your typescript code (Business Logic) and the template (HTML)
+
+Say if we wanted to Output data to the template,
+We can use String Interpolation: ({{ data }})
+or Property Binding ([property]="data")
+
+If the user clicks a button or triggers an event,
+we can use Event Binding ( (event)="expression" )
+
+Or, we can use a combo of both: Two-Way-Binding ([(ngModel)]="data")
+for when we want to output data and react to events at the same time
+
+String Interpolation - has to return a string. Can't write multi-line expressions.
+
+
+
+
+
+
+DIRECTIVES
+
+SERVICES AND DEPENDENCY INJECTION
+
+ROUTING
+
+OBSERVABLES
+
+FORMS
+
+PIPES
+
+HTTP
+
+AUTHENTICATION
+
+OPTIMIZATIONS AND NGMODULES
+
+DEPLOYMENT
+
+ANIMATIONS & TESTING

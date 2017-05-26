@@ -222,11 +222,6 @@ $(#thing1).animate({
 
 
 
-Intro to SASS
-
-.scss is the file extension for SASS
-
-
 Howler practice stuff
 
 
@@ -248,18 +243,3 @@ Howler practice stuff
 	
 	
 	
-HEROKU!!!
-//in cloud9
-
-Some useful commands:
-	git init
-	heroku login
-	heroku create
-	git remove -v check that the heroku remote got created
-	git push heroku master
-	heroku logs //to see the logs and debug heroku errors
-
-	
-Environment variables
-Ways of adding variables that change based on the environment; start with process.env in Mongo)
-

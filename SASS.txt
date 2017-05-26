@@ -1,0 +1,124 @@
+SASSS
+
+COMMON CLI COMMANDS
+sass-convert Example.scss Example sass //generates the sass file
+
+sass Example.scss:Example.css //conversts scss file and converts to CSS
+sass --watch Example.scss:Example.css //starts watching scss file and compiles it to CSS when there are changes
+sass --watch Directory:CSS
+//can watch multiple files and can exit with Ctrl+C
+sass Example.scss:Example.css //generates a css file and .map file
+sass Example.scss:Example.css --style compact //uses a compact style of css formatting
+//can also use compressed (smallest file size) or expanded
+sass Example.scss:Example.css --style compact --sourcemap=none
+// --sourcemap=none tells it not to generate a map file for debugging
+ sass-convert SCSS.scss SASS.sass
+ //converts SCSS to SASS. Will have to do this manually or with a task runner.
+
+SCSS more closely resembles CSS syntax
+SASS doesn't have semi-colons or curly brackets
+With SASS, indentation is EVERYTHING. 
+
+
+I prefer SCSS to SASS because I like using semi-colons
+SCSS 
+$black:#000; $width:600px; $int:20; 
+
+//Strings
+$string:'./images/hello.jpg';
+$stringTwo:"./images/hello.jpg";
+$stringThree: no-repeat;
+$stringSelector: element;
+
+div #{$stringSelector}//can use variables for selectors, can add # or . for IDs or classes {
+	width: $width;
+	...etc
+}
+
+SASS automatically converts rgb to hex values.
+
+$list: 1px 1px 3px black,
+	   3px 3px 4px #ccc;
+	   
+$map: ( "key1":"value1", "color":blue);
+$bool:true;	   
+$null:null;
+
+
+-----------
+INHERITANCE
+-----------
+
+#parent{
+	backround: green;
+	
+	#child-One{
+		background:yellow;
+		font-size:1em;
+	}
+	
+	&.HasClass{
+		background:blue;
+		font-weight:bold;
+		font-style:italic;
+	}
+}
+
+Can use the ampersand & when nesting and you don't want a space.
+
+.button {
+	&:visited {}
+	&:hover {}
+	&:active {}
+}
+
+
+Inherited properties and the extend directive.
+Declare placeholder with a % and give it a name: %shared 
+
+//placeholder here!
+%shared{
+	background:green;
+	font-size:2em;
+}
+
+.content{@extend %shared} 
+//this will compile to the .content CSS having the propertiesoutlined in %shared
+
+.sign,video,img{
+	@extend%shared
+}
+
+
+
+
+-----------
+MIXINS
+-----------
+Mixins are passed before the SASS is compiled to CSS
+We can pass arguments to the mixin to change the outcome of the code
+
+//THIS IS A MIXIN
+@mixin cssProperties{
+  color:blue;
+  background:green;
+  line-height:1.8;
+}
+
+//THIS IS HOW YOU CALL A MIXIN
+body { @include cssProperties(); } //compiles to body having these properties
+
+
+This can be very useful for things like box shadows, where you'd normally have to retype multiple values'
+@mixin boxShadow($shadow...){//can include ellipses to tell SASS we are passing in more than one argument here
+  -webkit-box-shadow:$shadow;
+  -moz-box-shadow:$shadow;
+  -o-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+
+body{@include boxShadow(1px 2px 3px rgba(0,0,0,0.3), 4px 4px 2px gray);
+
+
+The @content directive allows us to insert a block of content that we create when we call the mixin
+
